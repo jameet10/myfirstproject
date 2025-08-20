@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -50,11 +51,16 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'web1.urls'
-
+#'\Users\Jasmeet\Desktop\myfirstproject\web1\__pycache__\templates'
+#'\Users\Jasmeet\Desktop\myfirstproject\template
+# C:\Users\Jasmeet\Desktop\myfirstproject\web1\__pycache__\templates
+#C:\Users\Jasmeet\Desktop\myfirstproject\manage.py
+#C:\Users\Jasmeet\Desktop\myfirstproject\web1\templates
+TEMPLATES_DIR =BASE_DIR / 'web1' / 'templates'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
