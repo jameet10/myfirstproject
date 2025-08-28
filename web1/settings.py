@@ -78,14 +78,23 @@ WSGI_APPLICATION = 'web1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+# settings.py
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "OPTIONS": {
+            "read_default_file": f"{BASE_DIR}/creds/mysql_creds.cnf",
+        },
     }
 }
-
-
+#3C:\Users\Jasmeet\Desktop\myfirstproject\creds\mysql_creds.cnf
+#C:\Users\Jasmeet\Desktop\myfirstproject\manage.py
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 

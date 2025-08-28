@@ -1,0 +1,5 @@
+[client]
+database = 'srmcem'
+user = 'root'
+password = 'Jasmeet@100606'
+default-character-set = utf8mb4
